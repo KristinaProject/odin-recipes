@@ -2,42 +2,6 @@
   --width-100: 100%;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: peachpuff;
-  margin: 0;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-#title {
-  justify-content: center;
-  background-position: top;
-}
-
-#title,
-footer {
-  margin: 0 auto;
-  max-width: 1800px;
-  width: var(--width-100);
-  height: 100px;
-  background-image: url('https://cdn.pixabay.com/photo/2021/07/30/04/17/orange-6508617__340.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-h1 {
-  font-size: 46px;
-  font-style: italic;
-}
-
 ul {
   width: var(--width-100);
   list-style: none;
@@ -55,6 +19,7 @@ li {
   padding: 15px;
   cursor: pointer;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 
 .img-wrap {
@@ -103,11 +68,4 @@ span:hover,
 
 .img3 {
   background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F507101.jpg');
-}
-
-footer {
-  justify-content: right;
-  padding-right: 50px;
-  font-size: 18px;
-  background-position: bottom;
 }
