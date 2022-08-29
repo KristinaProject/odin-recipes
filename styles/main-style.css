@@ -1,3 +1,7 @@
+:root {
+  --width-100: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,22 +11,26 @@ body {
   margin: 0;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 #title {
   justify-content: center;
   background-position: top;
 }
 
-#title, footer {
+#title,
+footer {
   margin: 0 auto;
   max-width: 1800px;
-  width: 100%;
+  width: var(--width-100);
   height: 100px;
   background-image: url('https://cdn.pixabay.com/photo/2021/07/30/04/17/orange-6508617__340.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
 }
 
 h1 {
@@ -31,11 +39,9 @@ h1 {
 }
 
 ul {
-  width: 100%;
+  width: var(--width-100);
   list-style: none;
   padding: 0;
-  display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
@@ -43,7 +49,7 @@ ul {
 
 li {
   max-width: 400px;
-  width: 100%;
+  width: var(--width-100);
   height: 400px;
   background-color: whitesmoke;
   padding: 15px;
@@ -52,14 +58,14 @@ li {
 }
 
 .img-wrap {
-  width: 100%;
+  width: var(--width-100);
   height: 85%;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .meal-img {
-  width: 100%;
+  width: var(--width-100);
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -67,18 +73,12 @@ li {
   transition: all 0.2ms;
 }
 
-.meal-img:hover {
-  transform: scale(1.2);
-}
-
 a {
-  width: 100%;
+  width: var(--width-100);
   height: 100%;
   font-size: 22px;
   text-decoration: none;
   color: black;
-  display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -88,7 +88,8 @@ span {
   transition: all 0.1s;
 }
 
-span:hover {
+span:hover,
+.meal-img:hover {
   transform: scale(1.2);
 }
 
